@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-div {
+  min-height: 100vh;
+  background: #060822;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.child-div {
+  text-align: center;
+  margin-top: 12rem;
+  width: 25%;
+  height: 50vh;
+  background-color:#f4f4f4 ;
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5) ;
+  border-radius: 15px;
+
+}
+
+.child-div figure img {
+  width: 10rem;
+  height: 8rem;
+}
+
+.child-div figure figcaption {
+  color: #fff;
+  font-size: 2.2rem;
+  padding-top: 2rem;
+  text-transform: capitalize;
+}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+}
+
+/* style inputs and link buttons */
+input{
+  width: 70%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin: 25px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+
+}
+
+button{
+  line-height: 24px;
+  padding: 0 20px;
+  background-color: #9b59b6;
+  color: white;
+  border: 2px solid #ecf0f1;
+  outline: none;
+  border-radius: 15px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  cursor: pointer;
+  width: 70%;
+  height: 35px;
+} 
+
+.logoutbtn{
+  line-height: 24px;
+  padding: 0 20px;
+  background-color: #9b59b6;
+  color: white;
+  border-radius: 15px;
+  margin-top: 25px;
+  cursor: pointer;
+  width: 10%;
+  height: 35px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+
+.header{
+  text-align: center;
+  margin-bottom: 20px;
+  color:darkcyan
+}
+table {
+border-collapse: collapse;
+box-shadow: 0 5px 10px #e1e5ee;
+background-color: white;
+text-align: left;
+overflow: hidden;
+width: 100%;
+}
+thead {
+  box-shadow: 0 5px 10px #e1e5ee;
+}
+
+th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+td {
+  padding: 1rem 2rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f6fb;
+}
